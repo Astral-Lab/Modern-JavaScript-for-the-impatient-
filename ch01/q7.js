@@ -1,0 +1,20 @@
+```javascript
+// Coded solution to question 7
+
+/**
+ * 7. Give a realistic example in which a template string has an embedded ex-
+ * pression that contains another template string with an embedded
+ * expression.
+ */
+
+let bodyContent = {
+    hasTags: true,
+    content: '<h1>Realistic Example</h1'
+}
+
+let template = `<body>
+${bodyContent.hasTags ? `${bodyContent.content}` : ''}
+</body>`;
+
+console.log(template);
+```
